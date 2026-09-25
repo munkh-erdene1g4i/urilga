@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Хуримын Урилга | Билгүүн & Нараа</title>
+    <title>Хуримын Урилга | Батаа & Гэрлээ</title>
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -240,17 +240,13 @@
     <!-- Explosion Fireworks Canvas -->
     <canvas id="fireworkCanvas"></canvas>
 
-    <!-- Scroll Following Golden Butterfly (Visible on Mobile & Desktop) -->
+    <!-- Scroll Following Golden Butterfly -->
     <div id="butterflyContainer" class="opacity-0 transition-opacity duration-1000">
         <div class="relative w-12 h-12 -mt-6 -ml-6 flex items-center justify-center">
             <svg class="butterfly-wings w-10 h-10 drop-shadow-[0_0_8px_rgba(212,175,55,0.9)]" viewBox="0 0 100 100">
-                <!-- Left Wing -->
                 <path class="wing-left" fill="url(#goldGrad)" d="M50,50 Q10,10 5,35 Q0,60 50,55 Z" />
-                <!-- Right Wing -->
                 <path class="wing-right" fill="url(#goldGrad)" d="M50,50 Q90,10 95,35 Q100,60 50,55 Z" />
-                <!-- Body -->
                 <path fill="#fef1c9" d="M48,30 C48,25 52,25 52,30 L51,65 C51,68 49,68 49,65 Z" />
-                <!-- Gradients -->
                 <defs>
                     <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                         <stop offset="0%" stop-color="#fef1c9" />
@@ -264,7 +260,6 @@
 
     <!-- 1. DARK AMBIENT INTRO OVERLAY -->
     <div id="introOverlay" class="intro-overlay">
-        <!-- Glowing Ring Aura -->
         <div class="absolute w-72 h-72 rounded-full border border-[#d4af37]/20 animate-ping pointer-events-none"></div>
         <div class="absolute w-96 h-96 rounded-full border border-[#d4af37]/10 pointer-events-none"></div>
 
@@ -275,10 +270,10 @@
             </div>
 
             <h1 class="font-serif-luxury text-4xl sm:text-5xl font-bold text-[#fef1c9] mb-1 tracking-wide">
-                Доржгаваа & Оюунгэрэл
+                Батаа & Гэрлээ
             </h1>
 
-            <!-- Blooming Flowers Animation Under Names -->
+            <!-- Blooming Flowers Animation -->
             <div class="flower-bloom-container">
                 <svg class="flower-bloom-item w-5 h-5 text-[#d4af37]" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 2C11.5 4.5 9.5 6.5 7 7C9.5 7.5 11.5 9.5 12 12C12.5 9.5 14.5 7.5 17 7C14.5 6.5 12.5 4.5 12 2Z"/>
@@ -299,7 +294,6 @@
 
             <p class="text-xs text-gray-400 font-light tracking-widest mb-12">2026.10.15 | УЛААНБААТАР</p>
 
-            <!-- Main Interactive Glowing Button -->
             <button id="startBtn" class="glow-button group">
                 <span class="flex items-center space-x-3">
                     <i class="fa-solid fa-sparkles text-[#fef1c9] group-hover:rotate-12 transition transform"></i>
@@ -313,7 +307,7 @@
     <!-- MAIN INVITATION CONTAINER -->
     <div class="mobile-container flex flex-col justify-between relative overflow-hidden">
 
-        <!-- Floating Music Control Player -->
+        <!-- Music Control Player -->
         <div class="fixed top-5 right-5 z-50">
             <button id="musicToggle" class="w-11 h-11 rounded-full bg-[#1c1612]/90 backdrop-blur-md border border-[#d4af37]/40 shadow-lg shadow-black/50 flex items-center justify-center space-x-1 paused active:scale-95 transition">
                 <div class="eq-bar"></div>
@@ -330,18 +324,17 @@
             <div class="absolute inset-5 border border-[#d4af37]/15 rounded-xl pointer-events-none"></div>
 
             <div class="pt-8 reveal">
-                <p class="text-[10px] tracking-[0.5em] uppercase text-[#fef1c9] font-semibold">Гэгээн өдрийн мэнд</p>
+                <p class="text-[10px] tracking-[0.3em] uppercase text-[#fef1c9] font-semibold">Баярын товоо тэмдэглэн үлдээгээрэй</p>
                 <div class="w-10 h-[1px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mt-2"></div>
             </div>
 
             <div class="my-auto reveal">
                 <h1 class="font-serif-luxury text-5xl sm:text-6xl font-bold leading-tight gold-shimmer tracking-wide">
-                    Билгүүн<br>
+                    Батаа<br>
                     <span class="text-3xl font-light italic text-white/80">&</span><br>
-                    Нараа
+                    Гэрлээ
                 </h1>
 
-                <!-- Blooming Flowers Animation Under Names -->
                 <div class="flower-bloom-container">
                     <svg class="flower-bloom-item w-5 h-5 text-[#d4af37]" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M12 2C11.5 4.5 9.5 6.5 7 7C9.5 7.5 11.5 9.5 12 12C12.5 9.5 14.5 7.5 17 7C14.5 6.5 12.5 4.5 12 2Z"/>
@@ -457,7 +450,7 @@
                 <div class="bg-[#0e0b09] p-4 rounded-xl border border-[#d4af37]/20 mb-5">
                     <p class="text-[9px] text-gray-400 uppercase tracking-widest font-semibold">ХААН БАНК</p>
                     <p id="accountNo" class="font-serif-luxury text-2xl font-bold text-[#d4af37] my-1">5000123456</p>
-                    <p class="text-xs text-gray-300">Доржгаваа / Оюунгэрэл</p>
+                    <p class="text-xs text-gray-300">Батаа / Гэрлээ</p>
                 </div>
 
                 <button id="copyBtn" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#d4af37] to-[#8a6113] text-black text-xs tracking-wider font-bold uppercase shadow-lg active:scale-95 transition">
@@ -469,7 +462,7 @@
         <!-- FOOTER -->
         <footer class="py-12 text-center bg-[#080605] text-white/60 border-t border-[#d4af37]/10">
             <p class="font-serif-luxury text-lg text-[#fef1c9]">Бидэнтэй хамт байгаад баярлалаа</p>
-            <p class="text-[10px] text-gray-500 mt-2">© 2026 Доржгаваа & Оюунгэрэл</p>
+            <p class="text-[10px] text-gray-500 mt-2">© 2026 Батаа & Гэрлээ</p>
         </footer>
 
     </div>
@@ -627,11 +620,9 @@
 
         window.addEventListener('scroll', () => {
             const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
-            // Move butterfly along a sine wave path downwards
             targetX = (window.innerWidth * 0.5) + Math.sin(scrollPercent * Math.PI * 4) * (Math.min(window.innerWidth * 0.35, 160));
             targetY = 120 + scrollPercent * (window.innerHeight - 240);
 
-            // Create dynamic trail dots
             if (Math.random() > 0.4) {
                 createTrailDot(currentX, currentY);
             }
@@ -650,7 +641,6 @@
         }
 
         function updateButterflyPos() {
-            // Smooth lerp movement
             currentX += (targetX - currentX) * 0.08;
             currentY += (targetY - currentY) * 0.08;
 
@@ -670,19 +660,15 @@
             const btnCenterX = rect.left + rect.width / 2;
             const btnCenterY = rect.top + rect.height / 2;
 
-            // Trigger explosive fireworks
             explodeFireworks(btnCenterX, btnCenterY);
             setTimeout(() => explodeFireworks(window.innerWidth * 0.3, window.innerHeight * 0.3), 200);
             setTimeout(() => explodeFireworks(window.innerWidth * 0.7, window.innerHeight * 0.4), 400);
 
-            // Hide overlay smoothly
             introOverlay.classList.add('hidden-overlay');
             butterfly.classList.remove('opacity-0');
 
-            // Play synthesized romantic background music
             playAudio();
 
-            // Reveal scroll elements
             setTimeout(() => {
                 document.querySelectorAll('.reveal').forEach(el => el.classList.add('active'));
             }, 400);
@@ -713,42 +699,82 @@
             }
         }, 1000);
 
-        // --- 7. WEB AUDIO SYNTHESIZER MUSIC ---
-        let audioCtx, isPlaying = false;
+        // --- 7. ROMANTIC MUSIC BOX / HARP ARPEGGIATOR SYNTHESIZER ---
+        let audioCtx = null, isPlaying = false, musicInterval = null;
         const musicToggle = document.getElementById('musicToggle');
+
+        // Romantic Melody Notes (Canon in D Style Arpeggio)
+        const melodyNotes = [
+            293.66, 369.99, 440.00, 587.33,  // D
+            220.00, 277.18, 329.63, 440.00,  // A
+            246.94, 293.66, 369.99, 493.88,  // Bm
+            185.00, 220.00, 277.18, 369.99,  // F#m
+            196.00, 246.94, 293.66, 392.00,  // G
+            146.83, 185.00, 220.00, 293.66,  // D
+            196.00, 246.94, 293.66, 392.00,  // G
+            220.00, 277.18, 329.63, 440.00   // A
+        ];
+        let noteIndex = 0;
+
+        function playSoftNote(freq) {
+            if (!audioCtx || audioCtx.state !== 'running') return;
+
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            const filter = audioCtx.createBiquadFilter();
+
+            osc.type = 'sine';
+            osc.frequency.value = freq;
+
+            filter.type = 'lowpass';
+            filter.frequency.value = 1400; // Warm soft tone
+
+            const now = audioCtx.currentTime;
+            gain.gain.setValueAtTime(0, now);
+            gain.gain.linearRampToValueAtTime(0.08, now + 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.0005, now + 1.2);
+
+            osc.connect(filter);
+            filter.connect(gain);
+            gain.connect(audioCtx.destination);
+
+            osc.start(now);
+            osc.stop(now + 1.2);
+        }
+
+        function startMusicLoop() {
+            if (musicInterval) clearInterval(musicInterval);
+            musicInterval = setInterval(() => {
+                playSoftNote(melodyNotes[noteIndex]);
+                noteIndex = (noteIndex + 1) % melodyNotes.length;
+            }, 380); // Speed of arpeggio
+        }
 
         function playAudio() {
             if (isPlaying) return;
             try {
-                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-                const chords = [261.63, 329.63, 392.00, 523.25]; // C major gentle ambiance
-                chords.forEach((freq) => {
-                    const osc = audioCtx.createOscillator();
-                    const gain = audioCtx.createGain();
-                    osc.type = 'sine';
-                    osc.frequency.value = freq;
-                    gain.gain.setValueAtTime(0.015, audioCtx.currentTime);
-                    osc.connect(gain);
-                    gain.connect(audioCtx.destination);
-                    osc.start();
-                });
+                if (!audioCtx) {
+                    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                }
+                if (audioCtx.state === 'suspended') {
+                    audioCtx.resume();
+                }
                 isPlaying = true;
                 musicToggle.classList.remove('paused');
+                startMusicLoop();
             } catch (e) {
-                console.log("Audio play blocked by browser policy");
+                console.log("Audio play blocked", e);
             }
         }
 
         musicToggle.addEventListener('click', () => {
             if (isPlaying) {
+                if (musicInterval) clearInterval(musicInterval);
                 if (audioCtx) audioCtx.suspend();
                 isPlaying = false;
                 musicToggle.classList.add('paused');
             } else {
-                if (audioCtx) audioCtx.resume();
-                else playAudio();
-                isPlaying = true;
-                musicToggle.classList.remove('paused');
+                playAudio();
             }
         });
 
